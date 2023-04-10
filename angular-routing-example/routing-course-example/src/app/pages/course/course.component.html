@@ -1,0 +1,6 @@
+<p>Select Course</p>
+<select (change)="getCourseInfo($event.target)">
+    <option> Select Course </option>
+    <option *ngFor="let course of displayCourses" value="{{course}}">{{course}} Course</option>
+</select>
+
